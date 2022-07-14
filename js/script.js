@@ -28,7 +28,7 @@ inserite (es, Marco, Matteo Martina -> Scrivo “mar” rimangono
       data:{
         user: {
           name: 'MMDita',
-          avatar: '_io'
+          avatar: '_io',
         },
       contacts: [
         {
@@ -49,4 +49,14 @@ inserite (es, Marco, Matteo Martina -> Scrivo “mar” rimangono
         },
     ]
 },
+  methods:{
+    getContacts(index){
+    return 'img/avatar' + this.contacts[index].avatar + '.jpg';
+},
+    
+getUser() {
+      return 'img/avatar' + this.user.avatar+ '.jpg';
+  },
+
+  }
 })
