@@ -1,0 +1,6 @@
+body{
+    background-image: linear-gradient( rgb(2, 94, 26) 20vh, rgb(194, 194, 194) 0vh);
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    }

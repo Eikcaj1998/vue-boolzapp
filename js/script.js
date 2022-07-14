@@ -27,7 +27,7 @@ inserite (es, Marco, Matteo Martina -> Scrivo “mar” rimangono
       el: '#root',
       data:{
         user: {
-          name: 'Nome Utente',
+          name: 'MMDita',
           avatar: '_io'
         },
       contacts: [
@@ -48,5 +48,5 @@ inserite (es, Marco, Matteo Martina -> Scrivo “mar” rimangono
           avatar: '_4',
         },
     ]
-}
+},
 })
