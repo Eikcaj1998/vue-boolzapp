@@ -27,15 +27,34 @@
             <div class="container my-5">
                 <div class="row">
                     <!--  lato sinitro -->
-                    <div class="col-4">
+                    <div class="col-4" id="user-menu">
                         <div class="row">
-                            <div class="user-container d-flex" >
-                                <div class="avatar-container">
-                                    <img class="avatar" 
-                                    :src="getUser(user)"  
-                                    :alt="user.avatar">
-                                    <span class="fs-4 mt-3 mx-2 user-name">{{user.name}}</span>
-                                </div> 
+                            <div class="col-12 user-bar py-3 d-flex justify-content-between">
+                                <div class="user-container d-flex" >
+                                    <div class="avatar-container avatar-user mx-3 d-flex align-items-center" >
+                                        <img class="avatar" 
+                                        :src="getUser(user)"  
+                                        :alt="user.avatar">
+                                        <span class="mb-0 ms-2 fs-6">{{user.name}}</span>
+                                    </div> 
+                                </div>
+                                <span class="fs-4 mt-3 user-bar-icons">
+                                    <i class="fa-solid fa-circle-notch px-2"></i>
+                                    <i class="fa-solid fa-message px-2"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical px-2"></i>
+                                </span>
+                            </div>
+                            <div class="col-12 py-4 d-flex align-items-center ligh-bl">
+                                <i class="fa-solid fa-bell-slash fs-4 px-2"></i>
+                                <div class="flex-row mt-1 ">
+                                    <div>Ricevi notifiche nuovi messaggi</div>
+                                    <a class="text-black-50" href="#">Attiva notifiche desktop</a>
+                                </div>
+                            </div>
+                            <div class="col-12 search-bar fs-4 py-2">
+                                <span><i class="fa-solid fa-magnifying-glass px-2"></i></span>
+                                <input class="fs-5" type="text"
+                                    placeholder="Cerca o inizia una nuova chat">
                             </div>
                             <div class="col-12">
                                 <ul class="list-group">

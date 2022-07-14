@@ -4,7 +4,9 @@ body{
     background-repeat: no-repeat;
     overflow: hidden;
     }
-    
+#user-menu{
+    background-color: #fff;
+}
 .avatar-container{
     width: 60px;
     height: 60px;
@@ -18,4 +20,18 @@ body{
     height: 60px;
     border-radius: 100px;
 }
+.user-bar {
+    background-color: white;
     
+}
+.avatar-user{
+    margin-left: 10px;
+}
+ul.list-group{
+    height: 550px;
+    overflow-y: scroll;
+}
+.ligh-bl{ 
+    background-color: #8EDAFC;
+}
+i{color: grey;}

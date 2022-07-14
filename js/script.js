@@ -32,20 +32,36 @@ inserite (es, Marco, Matteo Martina -> Scrivo “mar” rimangono
         },
       contacts: [
         {
-          name: 'Michele',
+          name: 'Marco',
           avatar: '_1',
         },
         {
-          name: 'Fabio',
+          name: 'Giorgia',
           avatar: '_2',
         },
         {
-          name: 'Samuele',
+          name: 'Fabrizio',
           avatar: '_3',
         },
         {
-          name: 'Luisa',
+          name: 'Gabriele',
           avatar: '_4',
+        },
+        {
+          name: 'Gianluca',
+          avatar: '_5',
+        },
+        {
+          name: 'Andrei',
+          avatar: '_6',
+        },
+        {
+          name: 'Federico',
+          avatar: '_7',
+        },
+        {
+          name: 'Alfredo',
+          avatar: '_8',
         },
     ]
 },
