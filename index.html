@@ -105,8 +105,26 @@
                                     <i class="fa-solid fa-ellipsis-vertical px-2"></i>
                                 </span>
                             </div>
-                            <div class="message-box ">
-                                
+                            <div class="message-box">
+                                <div class="row">
+                                    <div class="message"
+                                        v-for="(message, index) in contacts[currentSelectedChat].messages">
+                                        <div class="message-baloon d-flex" :class="message.status" v-if="message.message !== '' ">
+                                            <div class="dropdown">
+                                                    <a class="dropdown-toggle fs-5 mx-2" id="dropdownMenuButton1"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                    </a>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                        <li><a class="dropdown-item" @click="deleteMessage(index)"
+                                                                href="#">Cancella</a></li>
+                                                        <li><a class="dropdown-item" @click="pinMessage(index)" href="
+                                                                #">Importante</a></li>
+                                                    </ul>
+                                            </div>
+                                            {{message.message}}
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="py-3 bg-white d-flex justify-content-between">
                                 <span><i class="fa-regular fa-face-smile fs-4 mx-3"></i></span>
