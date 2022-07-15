@@ -27,6 +27,7 @@ inserite (es, Marco, Matteo Martina -> Scrivo “mar” rimangono
     {
       el: '#root',
       data:{
+        currentSelectedChat: 0,
         user: {
           name: 'MMDita',
           avatar: '_io',
@@ -179,7 +180,13 @@ inserite (es, Marco, Matteo Martina -> Scrivo “mar” rimangono
 },
   methods:{
     printDate(){
-      return dayjs(this.birthday).format('DD/MM/YYYY HH/mm/ss')
-    }
+      return dayjs(this.date).format('DD/MM/YYYY HH/mm/ss')
+    },
+    getImgFullPath(index){
+      return './img/avatar' + this.contacts[index].avatar + '.jpg';
+   },
+    chatSelection(indexChange){
+      this.currentSelectedChat = indexChange;
+  },
 }
 })
