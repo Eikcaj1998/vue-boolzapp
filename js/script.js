@@ -55,7 +55,7 @@ inserite (es, Marco, Matteo Martina -> Scrivo “mar” rimangono
     ],
   },
   {
-    name: 'Giorgia',
+    name: 'Manuel',
     avatar: '_2',
     visible: true,
     messages: [{
@@ -185,8 +185,8 @@ inserite (es, Marco, Matteo Martina -> Scrivo “mar” rimangono
     getImgFullPath(index){
       return './img/avatar' + this.contacts[index].avatar + '.jpg';
    },
-    chatSelection(indexChange){
-      this.currentSelectedChat = indexChange;
+    chatSelection(index){
+      this.currentSelectedChat = index;
   },
 }
 })

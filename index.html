@@ -68,7 +68,8 @@
                             <div class="col-12">
                                 <ul class="list-group">
                                     <li class="list-group-item list-group-item-action py-4 d-flex"
-                                        v-for="(contact,index) in contacts">
+                                        v-for="(contact,index) in contacts"
+                                        v-if="contact.visible">
                                         <div class="avatar-container">
                                             <img class="avatar" 
                                             :src="getImgFullPath(index)" 
@@ -97,8 +98,12 @@
                                         <div class="fs-5">{{contacts[currentSelectedChat].name}}</div>
                                         <div class="text-black-50">Ultimo acesso oggi alle</div>
                                     </div>
-                                    <span class="fs-4"></span>
                                 </div>
+                                    <span class="fs-4 mt-3">
+                                    <i class="fa-solid fa-magnifying-glass px-2"></i>
+                                    <i class="fa-solid fa-tag px-2"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical px-2"></i>
+                                </span>
                             </div>
                             <div class="message-box ">
                                 
