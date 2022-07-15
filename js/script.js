@@ -178,9 +178,6 @@ inserite (es, Marco, Matteo Martina -> Scrivo “mar” rimangono
 ]
 },
   methods:{
-    getContacts(index){
-    return 'img/avatar' + this.contacts[index].avatar + '.jpg';
-},
     printDate(){
       return dayjs(this.birthday).format('DD/MM/YYYY HH/mm/ss')
     }

@@ -71,7 +71,7 @@
                                         v-for="(contact,index) in contacts">
                                         <div class="avatar-container">
                                             <img class="avatar" 
-                                            :src="getContacts(index)" 
+                                            :src="`img/avatar${contact.avatar}.jpg`" 
                                             :alt="contacts.avatar">
                                         </div>
                                         <div>
@@ -82,7 +82,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- lato destro contact-->
+                    <!-- lato destro messages-->
                     <div class="col-8">
                         <div class="row">
                             <div class="py-3 d-flex justify-content-between top-bar">
