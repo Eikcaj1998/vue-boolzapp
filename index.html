@@ -26,19 +26,19 @@
         <main>
             <div class="container my-5">
                 <div class="row">
-                    <!--  lato sinitro -->
-                    <div class="col-4" id="user-menu">
-                        <div class="row">
-                            <div class="col-12 user-bar py-3 d-flex justify-content-between">
+                    <!--  lato sinitro user-->
+                    <div class="col-4 border-end border-4" id="user-menu">
+                        <div class="row ">
+                            <div class="col-12 top-bar py-3 d-flex justify-content-between">
                                 <div class="user-container d-flex" >
                                     <div class="avatar-container avatar-user mx-3 d-flex align-items-center" >
                                         <img class="avatar" 
-                                        :src="getUser(user)"  
+                                        :src= "`img/avatar${user.avatar}.jpg`"
                                         :alt="user.avatar">
                                         <span class="mb-0 ms-2 fs-6">{{user.name}}</span>
                                     </div> 
                                 </div>
-                                <span class="fs-4 mt-3 user-bar-icons">
+                                <span class="fs-4 mt-3">
                                     <i class="fa-solid fa-circle-notch px-2"></i>
                                     <i class="fa-solid fa-message px-2"></i>
                                     <i class="fa-solid fa-ellipsis-vertical px-2"></i>
@@ -51,9 +51,10 @@
                                     <a class="text-black-50" href="#">Attiva notifiche desktop</a>
                                 </div>
                             </div>
+                            <!-- lato-sinistro contacts -->
                             <div class="col-12 search-bar fs-4 py-2">
                                 <span><i class="fa-solid fa-magnifying-glass px-2"></i></span>
-                                <input class="fs-5" type="text"
+                                <input class="fs-5" type="text "size="26"
                                     placeholder="Cerca o inizia una nuova chat">
                             </div>
                             <div class="col-12">
@@ -73,12 +74,31 @@
                             </div>
                         </div>
                     </div>
-                    <!-- lato destro -->
+                    <!-- lato destro contact-->
                     <div class="col-8">
                         <div class="row">
-                            <div class="col-12 py-3 d-flex justify-content-between">
+                            <div class="py-3 d-flex justify-content-between top-bar">
+                                <div class="user-container d-flex">
+                                    <div class="avatar-container" >
+                                        <img class="avatar" src="img/avatar_1.jpg">
+                                    </div>
+                                    <div>
+                                        <div class="fs-5">Marco</div>
+                                        <div class="text-black-50">Ultimo acesso oggi alle</div>
+                                    </div>
+                                    <span class="fs-4"></span>
+                                </div>
+                            </div>
+                            <div class="message-box ">
+                                
+                            </div>
+                            <div class="py-3 bg-white d-flex justify-content-between">
+                                <span><i class="fa-regular fa-face-smile fs-4 mx-3"></i></span>
+                                <input type="text" id="message" placeholder="messaggio"size="80">
+                                <span><i class="fa-solid fa-microphone fs-4 mx-3"></i></span>
                             </div>
                         </div>
+                    </div>
                 </div>
             </div>
 

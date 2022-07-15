@@ -20,8 +20,8 @@ body{
     height: 60px;
     border-radius: 100px;
 }
-.user-bar {
-    background-color: white;
+.top-bar {
+    background-color: lightgrey;
     
 }
 .avatar-user{
@@ -35,3 +35,15 @@ ul.list-group{
     background-color: #8EDAFC;
 }
 i{color: grey;}
+.message-box{
+    background-image: url(../img/genshin-impact-noelle-genshin-impact-hd-wallpaper-preview.jpg);
+    background-repeat: no-repeat;
+    background-size: 900px 700px;
+    height: 700px;
+    position: relative;
+    overflow-y: scroll;
+    overflow-x:hidden;
+}
+/* #message{
+    width: 20px;
+} */

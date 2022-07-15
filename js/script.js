@@ -69,10 +69,5 @@ inserite (es, Marco, Matteo Martina -> Scrivo “mar” rimangono
     getContacts(index){
     return 'img/avatar' + this.contacts[index].avatar + '.jpg';
 },
-    
-getUser() {
-      return 'img/avatar' + this.user.avatar+ '.jpg';
-  },
-
-  }
+}
 })
