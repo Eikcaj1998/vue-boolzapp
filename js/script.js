@@ -28,6 +28,7 @@ inserite (es, Marco, Matteo Martina -> Scrivo “mar” rimangono
       el: '#root',
       data:{
         currentSelectedChat: 0,
+        newUserMessage: "",
         user: {
           name: 'MMDita',
           avatar: '_io',
@@ -188,5 +189,26 @@ inserite (es, Marco, Matteo Martina -> Scrivo “mar” rimangono
     chatSelection(index){
       this.currentSelectedChat = index;
   },
+
+  addNewMessage(){
+    this.contacts[this.currentSelectedChat].messages.push({
+        
+      text: this.newUserMessage,
+        status: 'sent'
+    });
+    this.newUserMessage = "";
+
+    setTimeout(this.respondingAI, 1000)
+
+},
+
+respondingAI(){
+
+    this.contacts[this.currentSelectedChat].messages.push({
+        
+      text: "Ok!",
+        status: 'received'
+    });
+},
 }
 })
