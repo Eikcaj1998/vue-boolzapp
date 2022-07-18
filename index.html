@@ -120,14 +120,20 @@
 
                             <!-- text messge -->
                             <div class="py-3 bg-white d-flex justify-content-between">
-                                <span><i class="fa-regular fa-face-smile fs-4 mx-3"></i></span>
-                                <input  type="text"  
-                                        v-model="newUserMessage" 
-                                        @keyup.enter="addNewMessage"
-                                        id="message" 
-                                        placeholder="messaggio"
-                                        size="80">
-                                <span><i class="fa-solid fa-microphone fs-4 mx-3"></i></span>
+                                <div>
+                                    <span><i class="fa-regular fa-face-smile fs-4 mx-3"></i></span>
+                                </div>
+                                <div>
+                                    <input  type="text"  
+                                            v-model="newUserMessage" 
+                                            @keyup.enter="addNewMessage"
+                                            id="message" 
+                                            placeholder="messaggio"
+                                            size="80">
+                                </div>
+                                <div>
+                                    <span><i class="fa-solid fa-microphone fs-4 mx-3"></i></span>
+                                </div>
                             </div>
                         </div>
                     </div>
