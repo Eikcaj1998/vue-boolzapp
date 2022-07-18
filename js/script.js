@@ -29,6 +29,7 @@ inserite (es, Marco, Matteo Martina -> Scrivo “mar” rimangono
       data:{
         currentSelectedChat: 0,
         newUserMessage: "",
+        searchBar:"",
         user: {
           name: 'MMDita',
           avatar: '_io',
@@ -209,6 +210,15 @@ respondingAI(){
       text: "Ok!",
         status: 'received'
     });
+},
+searchContact: function(searchBar) {
+  this.contacts.forEach(contact => {
+      if(contact.name.toLowerCase().includes(searchBar.toLowerCase())) {
+          contact.visible = true;
+      } else {
+          contact.visible = false;
+      }
+  });
 },
 }
 })

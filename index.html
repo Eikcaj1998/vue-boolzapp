@@ -52,6 +52,7 @@
                                     <i class="fa-solid fa-ellipsis-vertical px-2"></i>
                                 </span>
                             </div>
+                            <!-- notifiche -->
                             <div class="col-12 py-4 d-flex align-items-center ligh-bl">
                                 <i class="fa-solid fa-bell-slash fs-4 px-2"></i>
                                 <div class="flex-row mt-1 ">
@@ -59,12 +60,13 @@
                                     <a class="text-black-50" href="#">Attiva notifiche desktop</a>
                                 </div>
                             </div>
-                            <!-- lato-sinistro contacts -->
+                            <!-- searchbar -->
                             <div class="col-12 search-bar fs-4 py-2">
                                 <span><i class="fa-solid fa-magnifying-glass px-2"></i></span>
-                                <input class="fs-5" type="text "size="26"
-                                    placeholder="Cerca o inizia una nuova chat">
+                                <input class="fs-5" type="text "size="26" v-model="searchBar" @keyup="searchContact(searchBar)"
+                                placeholder="Cerca o inizia una nuova chat">
                             </div>
+                            <!-- lato-sinistro contacts -->
                             <div class="col-12">
                                 <ul class="list-group">
                                     <li class="list-group-item list-group-item-action py-4 d-flex"
@@ -115,6 +117,8 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- text messge -->
                             <div class="py-3 bg-white d-flex justify-content-between">
                                 <span><i class="fa-regular fa-face-smile fs-4 mx-3"></i></span>
                                 <input  type="text"  
